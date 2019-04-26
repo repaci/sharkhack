@@ -11,33 +11,52 @@ class Iran
 
    // accessable to all variables
    
-   public String introduction()
+   public String intro1()
    {
       String intro = "My name is Fatima Satrapi. I am 37 years old. I am from Iran. \n I have a 40 year old husband, a 15 year old son, a 12 year old daughter, and an 8 year old daughter. \n I am a homemaker, and my husband works as a car mechanic. We want to immigrate to the United States for better economic opportunities.";
       return(intro);
    }
    
-  public String sit1Intro()
+  public String intro2()
    {
       String sit1 = "My family and I are from Iran, a country affected by Executive Order 13780, also known as the Muslim Ban 3.0. In order to even apply for a visa, we first need to get a waiver for the Muslim Ban.";
       return(sit1);
    }
    
-   public String sit1Req()
+   public String sit1()
    {
       String info1 = "In order to successfully receive a waiver, I need to prove the following: \n 1. Denying entry to the U.S. would cause the visa applicant undue hardship \n 2. Entry to the U.S. would not pose a threat to the national security or public safety of the U.S. \n 3. Entry would be in the national interest of the U.S.";
       return(info1);
    }
    
-   public String[] sit1Prompt10()
+   public String sit1Prompt1()
    {
+      String sit1prompt1 = "How will I prove that denying entry to the U.S. would cause my family and I undue hardship?";
+      return(sit1prompt1);
+   }
    
+   public String[] sit1options1()
+   {
+      String[] options = new String[3];
+      
+      options[0] = "My husband  would be unable to continue economically supporting my family if we were to stay in Iran.";
+      options[1] = "I have always dreamed of coming to the United States, and would be upset if I was denied entry. ";
+      options[2] = "My family and I fear for our safety in Iran.";
+      
+      return(options);
    }
    
    
-   public boolean turn1(String choice) // letter choices (ex: A, B, etc)
+   public int sit1choice1(int choice)
    {
-    
+     int points = 0;
+     
+     if(choice == 0)
+       points = points + 2;
+     else if(choice == 2)
+       points = points + 4;
+     
+     return(points);
    }
    
    public boolean isWinner()
