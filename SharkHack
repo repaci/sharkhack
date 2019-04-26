@@ -1,0 +1,51 @@
+// Code created by Charlie Repaci and Katie McCarver. 
+// Information, text, and story by Rebecca Sparks.
+
+// The purpose of this program is to provide background functions for overall story.
+
+import java.util.*;
+import java.util.Random;
+
+class SharkHack
+{
+
+   // accessable to all variables
+   
+   public String introduction()
+   {
+      String intro = "My name is Fatima Satrapi. I am 37 years old. I am from Iran. \n I have a 40 year old husband, a 15 year old son, a 12 year old daughter, and an 8 year old daughter. \n I am a homemaker, and my husband works as a car mechanic. We want to immigrate to the United States for better economic opportunities.";
+      return(intro);
+   }
+   
+   
+   public boolean turn1(String choice) // letter choices (ex: A, B, etc)
+   {
+    
+   }
+   
+   public boolean isWinner()
+   {
+    
+   }
+   
+   public String gameOverStatus()
+   {
+      if(isWinner())
+         return("winner");
+      else if (turnCnt == 12)
+         return("loser");
+      else
+         return("inProgress");
+   }
+   
+   public boolean isValidInput(int [] x)
+   {
+      
+   }
+   
+   public String toString()
+   {
+   
+   }
+
+}
