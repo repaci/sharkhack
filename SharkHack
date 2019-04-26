@@ -6,7 +6,7 @@
 import java.util.*;
 import java.util.Random;
 
-class SharkHack
+class Iran
 {
 
    // accessable to all variables
@@ -15,6 +15,23 @@ class SharkHack
    {
       String intro = "My name is Fatima Satrapi. I am 37 years old. I am from Iran. \n I have a 40 year old husband, a 15 year old son, a 12 year old daughter, and an 8 year old daughter. \n I am a homemaker, and my husband works as a car mechanic. We want to immigrate to the United States for better economic opportunities.";
       return(intro);
+   }
+   
+  public String sit1Intro()
+   {
+      String sit1 = "My family and I are from Iran, a country affected by Executive Order 13780, also known as the Muslim Ban 3.0. In order to even apply for a visa, we first need to get a waiver for the Muslim Ban.";
+      return(sit1);
+   }
+   
+   public String sit1Req()
+   {
+      String info1 = "In order to successfully receive a waiver, I need to prove the following: \n 1. Denying entry to the U.S. would cause the visa applicant undue hardship \n 2. Entry to the U.S. would not pose a threat to the national security or public safety of the U.S. \n 3. Entry would be in the national interest of the U.S.";
+      return(info1);
+   }
+   
+   public String[] sit1Prompt10()
+   {
+   
    }
    
    
